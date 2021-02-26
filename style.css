@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background: #141316;
+}
+
+body header img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 200px;
+    animation-name: logo;
+    animation-duration: 2s;
+}
+
+@keyframes logo {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+body header h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
+
+body header p {
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 15px;
+    color: white;
+}
+
+.links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    body .links button {
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        border: 3px solid white;
+        border-radius: 30px;
+        background-color: #1f003a;
+        height: 65px;
+        width: 80%;
+        max-width: 700px;
+        margin: 15px 0;
+        animation-name: button;
+        animation-duration: 2s;
+    }
+
+
+        body .links button:hover {
+            transition: 0.1s;
+            width: 82%;
+            background-color: #2e0750;
+            cursor: pointer;
+        }
+
+            body .links button:focus {
+                outline: none;
+            }
+
+@keyframes button {
+    0% {
+        background-color: none;
+        width: 0;
+        font-size: 0px;
+    }
+    100% {
+        width: 80%;
+        font-size: 15px;
+}
+}
+
+footer {
+    background-color: #1f003a;
+    border-top: 3px solid white;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    margin-top: 15px;
+}
+
+    footer img {
+        width: 100px;
+    }
+
+        footer p {
+            font-size: 15px;
+            color: white;
+            animation-name: footer;
+            animation-duration: 2.5s;
+        }
+
+@keyframes footer {
+    0% {
+        color: #1f003a;
+        font-size: 0;
+    }
+
+    90% {
+        color: #1f003a;
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 15px;
+    }
+}
